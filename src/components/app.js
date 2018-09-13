@@ -1,11 +1,15 @@
-import React from 'react';
-import '../assets/css/app.css';
-import Player from './player'
+import React, { Component } from 'react'
+import '../assets/css/app.css'
+import Instance from './instance'
 
-const App = () => (
-    <div>
-    <Player/>
-    </div>
-);
+class App extends Component {
 
-export default App;
+    render() {
+        return (
+            <div className="app">
+                <Instance/>
+            </div>
+        )
+    }
+};
+export default App
